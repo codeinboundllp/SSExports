@@ -1,7 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="hiqpdf" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HiQPdf.NetCore">
+      <HintPath>..\..\..\..\Downloads\HiQPdf_NetCore_12.0\Assemblies\HiQPdf.NetCore.dll</HintPath>
+      <CopyLocal>True</CopyLocal>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\AmanAdlakha\.nuget\packages\hiqpdf\12.0.0\contentFiles\any\any\HiQPdf.dep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="C:\Users\AmanAdlakha\.nuget\packages\hiqpdf\12.0.0\contentFiles\any\any\HiQPdf.rda">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
